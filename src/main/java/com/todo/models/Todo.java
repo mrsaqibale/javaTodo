@@ -73,6 +73,12 @@ public class Todo {
 	}
 	@Column(length = 50)
     private String title;
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
 	@Column(length = 500)
     private String description;
     private Date date;
